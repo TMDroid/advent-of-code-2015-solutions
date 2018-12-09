@@ -14,7 +14,8 @@ while not found:
     crypt.update(phrase.encode('utf-8'))
     digest = crypt.hexdigest()
 
-    if digest[0:5] == '00000':
+    # if digest[0:5] == '00000':  # part 1
+    if digest[0:6] == '000000':    # part 2
         print("Found the magic key: {0}".format(phrase))
         found = True
 

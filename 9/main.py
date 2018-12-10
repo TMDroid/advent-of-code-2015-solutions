@@ -22,7 +22,7 @@ def tsp(G, weight='weight'):
                     paths.append((node, n, w))
 
         if paths:
-            best = min(paths, key=lambda x: x[2][weight])
+            best = max(paths, key=lambda x: x[2][weight])
 
             visited.append(best[0])
             visited.append(best[1])

@@ -1,11 +1,13 @@
 with open("input") as f:
     input = f.readlines()[0]
 
-times = 40
+times = 50
 output = ""
 for index in range(times):
     same = ""
     output = ""
+
+    print(index)
 
     i = 0
     while i < len(input):
